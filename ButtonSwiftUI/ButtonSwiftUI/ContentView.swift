@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      VStack(alignment: .leading) {
+      VStack(alignment: .center) {
         Button(action: {
           print("Hello world")
         }) {
@@ -20,23 +20,9 @@ struct ContentView: View {
         }
         .background(Color.blue)
 
-        Button(action: {
-          print("Hello world")
-        }) {
-          Text("Press here")
-            .foregroundColor(Color.white)
-            .padding(.all, 12)
-        }
-        .background(Color.red)
-
-        Button(action: {
-          print("Hello world")
-        }) {
-          Text("Press here")
-            .foregroundColor(Color.white)
-            .padding(.all, 12)
-        }
-        .background(Color.black)
+        Text("First text")
+        
+        Text("Second text")
       }
     }
 }
