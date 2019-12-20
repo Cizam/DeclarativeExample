@@ -10,7 +10,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+      VStack(alignment: .leading) {
+        Button(action: {
+          print("Hello world")
+        }) {
+          Text("Press here")
+            .foregroundColor(Color.white)
+            .padding(.all, 12)
+        }
+        .background(Color.blue)
+
+        Button(action: {
+          print("Hello world")
+        }) {
+          Text("Press here")
+            .foregroundColor(Color.white)
+            .padding(.all, 12)
+        }
+        .background(Color.red)
+
+        Button(action: {
+          print("Hello world")
+        }) {
+          Text("Press here")
+            .foregroundColor(Color.white)
+            .padding(.all, 12)
+        }
+        .background(Color.black)
+      }
     }
 }
 
